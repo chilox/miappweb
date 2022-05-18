@@ -1,6 +1,3 @@
-
-
-
 function login_validate(){
     let email = document.getElementById('email').value;
     let pass = document.getElementById('password').value;

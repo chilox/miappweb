@@ -1,10 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">    
     <link rel="stylesheet" href="estilos/menudrawer.css">
+    <link rel="stylesheet" href="estilos/home.css">
+    <script src="JS/app.js"></script>
+    
     <title>Factura</title>
 </head>
 <body>
@@ -24,15 +27,28 @@
             <div class="cont-menu">
                 <nav>
                     <button>Perfil</button>
-                    <button><a href="home.html">Inicio</a></button>
-                    <button><a href="perfil.html">Perfil</a></button>
-                    <button><a href="factura.html">Factura</a></button>
-                    <button><a href="pago.html">Pago</a></button>
-                    <button><a href="login.html">Cerrar Sesión</a></button>
+                    <button class="cont-menu__home" onclick="redireccion('home.html')">Inicio</button>
+                    <button class="cont-menu__perfil" onclick="redireccion('Perfil.html')">Perfil</button>
+                    <button class="cont-menu__factura" onclick="redireccion('factura.html')">Factura</button>
+                    <button class="cont-menu__pago" onclick="redireccion('pago.html')">Pago</button>
+                    <button class="cont-menu__cerrarSesion" onclick="cierreSesion()">Cerrar Sesión</button>
+                    
                 </nav>
+                <div class="cierre" onclick="cierreSesion();">
+                    <h2>Desea cerrar Sesión</h2>
+                    <button class="cierre-si" onclick="redireccion('login.html')">Si</button>
+                    <button class="cierre-no" onclick="redireccion('home.html')">No</button>
+                </div>
                 <label for="btn-menu" class="close-menu"><b>X</b></label>
+               
             </div>
         </div>
-    </header>      
+    </header>  
+    <main>   
+       
+
+    </main>
+    
 </body>
+<script>validarUrl();</script>
 </html>

@@ -14,8 +14,10 @@ body{
     display: block;
 }
 .main {
+    position: relative;
     height: 700px;
     padding-top: 0;
+    z-index: 0;
 }
 .navegation{
     display: flex;
@@ -45,6 +47,38 @@ body{
     visibility: visible;
 }
 
+.cierre{
+    position: absolute;
+    left: 300%;
+    top: 50%;
+    width: 100%;    
+    display: flex;
+    opacity: 0;
+    justify-items: center;
+    visibility: hidden;
+    background-color: #8F2EF5;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid gray;
+    border-radius: 30px;
+    z-index: 10;
+}
+
+.cierre h2 {
+    display: flex;
+    justify-content: center;
+}
+
+.cierre-si {
+    margin: 0 auto 1px auto;
+    width: 100px;
+}
+
+.cierre-no {
+    margin: 0 auto 1px auto;
+    width: 100px;
+}
+
 .cont-menu{
     width: 100%;
     max-width: 250px;
@@ -67,14 +101,12 @@ body{
     width: 100%;
     background: transparent;
     text-align: left;
-    
-}
-.cont-menu nav button a{  
     text-decoration: none;
     color: white;
     font-size: 26px;
     
 }
+
 
 .cont-menu nav button:hover{  
     border-left: 5px solid #F0EEF2;
@@ -85,7 +117,6 @@ body{
     right: -15px;
     top: 10px;    
     height: 20px;
-    
 }
 .cont-menu label:hover{
     background-color: #8F2EF5;
