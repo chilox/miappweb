@@ -31,20 +31,21 @@
                 <a href="">Olvidé mi contraseña</a>
             </div>
             <div class="signin-ingresar">
-                <button id="ingresar" type="submit" onclick="login_validate();">Ingresar</button>
+                <button id="ingresar" type="submit" onclick="login_validate(); login_user_ok()" on>Ingresar</button>
             </div>
             <div class="signin-register">
                 <div class="signin-register__p">
                     <p href="">¿No estás registrado?</p>
                 </div>
                 <div class="signin-register__button">
-                    <button><a href="registro.html" >registrate</a></button>
+                    <button onclick="redireccion('registro.html'); ">Registrate</button>
                 </div>
                 
             </div>
             
         </div>
        <script src="JS/app.js"></script>
+       
     </main>
     <footer>
         <div class="footer">

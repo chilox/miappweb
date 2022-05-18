@@ -32,8 +32,13 @@
                     <button class="cont-menu__pago" onclick="redireccion('pago.html')">Pago</button>
                     <button class="cont-menu__cerrarSesion" onclick="cierreSesion()">Cerrar Sesión</button>
                 </nav>
+                <div class="cierre" onclick="cierreSesion();">
+                    <h2>Desea cerrar Sesión</h2>
+                    <button class="cierre-si" onclick="redireccion('login.html')">Si</button>
+                    <button class="cierre-no" onclick="redireccion('home.html')">No</button>
+                </div>
                 <label for="btn-menu" class="close-menu"><b>X</b></label>
-                <script>validarUrl();</script>
+                
             </div>
         </div>
     </header>  
@@ -43,4 +48,5 @@
     
     
 </body>
+<script>validarUrl();</script>
 </html>

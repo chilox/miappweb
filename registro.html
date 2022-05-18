@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos/estilos.css">
+    <title>Registro</title>
+</head>
+<body>
+    <header class="header-registro">
+        <div>
+            <h1>Registro de usuario</h1>
+        </div>
+    </header>
+
+    <main class="main-registro">
+        <div class="cont-registro">
+            <label for="">Registro</label>
+            <input class="cont-registro__nombre" type="text" placeholder="Ingrese Nombre" required>
+            <input class="cont-registro__apellido" type="text" placeholder="Ingrese Apellido" required>
+            <input class="cont-registro__email" type="email" placeholder="Correo Electronico" required>
+            <input class="cont-registro__number" type="number" placeholder="Numero de telefono" required>
+            <input class="cont-registro__pass" type="password" placeholder="Contraseña" required>
+            <div class="cont-registro__btns">
+                <button class="cont-registro__btn1" onclick="registro_validate()">Enviar</button>
+                <button class="cont-registro__btn2">Cancelar</button>                
+            </div>
+            <div class="cont-registro__login">
+                <button onclick="redireccion('login.html')" class="cont-registro__lbtnogin">Iniciar sesión</button>
+            </div>
+        </div>
+    </main>
+    
+</body>
+<script src="JS/app.js"></script>
+</html>
