@@ -1,0 +1,149 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18px;
+    text-decoration: none;
+}
+body{
+    background: #F2F2F2;
+    color: #222222;
+    max-width: 100%;
+   
+    margin: 0;
+    padding: 0;
+    display: block;
+}
+.main {
+    height: 700px;
+    padding-top: 0;
+}
+.navegation{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background: #A75EF5;
+   
+}
+
+#btn-menu{
+    display: none;
+}
+
+.menu-drawer{
+    position: absolute;
+    background: rgba(0, 0, 0, 0.5) transparent;
+    width: 100%;
+    height: 100vh;
+    top: 0; left: 0;
+    transition: all 50ms ease;
+    opacity: 0;
+    visibility: hidden;
+}
+
+#btn-menu:checked ~ .menu-drawer{
+    opacity: 1;
+    visibility: visible;
+}
+
+.cont-menu{
+    width: 100%;
+    max-width: 250px;
+    margin-top: 0;
+    background: #A75EF5;;
+    height: 100vh;
+    position: relative;
+    transition: all 50ms ease;
+}
+.cont-menu nav{
+    transform: translateY(15%);
+}
+
+.cont-menu nav button{
+    display: block;
+    padding: 20px;
+    margin-bottom: 10px;
+    text-decoration: none;
+    border: 5px solid transparent;
+    width: 100%;
+    background: transparent;
+    text-align: left;
+    
+}
+.cont-menu nav button a{  
+    text-decoration: none;
+    color: white;
+    font-size: 26px;
+    
+}
+
+.cont-menu nav button:hover{  
+    border-left: 5px solid #F0EEF2;
+    background: #8F2EF5;
+}
+.cont-menu label{
+    position: absolute;
+    right: -15px;
+    top: 10px;    
+    height: 20px;
+}
+.cont-menu label:hover{
+    background-color: #8F2EF5;
+}
+
+.main {
+    width: 100%;
+    max-width: 700px;    
+    padding: 80px 20px;
+    border-radius: 6px;  
+    
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto 16px auto;        
+}
+
+.home-factura {
+    display: flex;
+    justify-content: center;
+    
+}
+
+.home-factura button {
+    width: 90%;
+    height: 70px;
+    margin-bottom: 40px;
+    border-radius: 20px;
+    background-color: #A75EF5;  
+    border: transparent;  
+}
+
+.home-factura a{
+    color: white;
+}
+
+.home-pago {
+    display: flex;
+    justify-content: center;
+    
+}
+
+.home-pago button {
+    width: 90%;
+    height: 70px;
+    margin-bottom: 40px;
+    border-radius: 20px;
+    background-color: #A75EF5;  
+    border: transparent;  
+}
+.home-pago a{
+    color: white;
+}
+
+.footer{
+    width: 100%;
+    height: 60px;
+    padding-bottom: 0%;
+    margin-bottom: 0%;
+    background-color: white;
+    padding: 12px;
+    border-top: 1px solid #d0d0d0;
+}
